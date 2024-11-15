@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;  /* define el tipo de letra que se esta utilizando o usa otra fuente si el arial no esta disponible*/
+    margin: 0; /*Elimina el margen y el relleno predeterminados*/ 
+    padding: 0;  /*Elimina el margen y el relleno predeterminados*/
+}
+
+header {
+    background-color: #007BFF; /* Cambiado a un azul más vibrante */
+    color: white; /*  Cambia el color del texto a blanco.*/
+    padding: 15px 0; /* Añade espacio en la parte superior e inferior del encabezado.*/
+    text-align: center; /*Centra el texto dentro del encabezado.*/
+}
+
+nav ul {
+    list-style-type: none;  /*  Elimina los puntos de viñeta en los elementos de lista*/
+    padding: 0; /*Quita el relleno predeterminado.*/
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea (horizontalmente).*/
+    margin: 0 20px; /* Aumentado el margen entre elementos */
+}
+
+nav ul li a {
+    color: white; /* Cambia el color de los enlaces a blanco.*/
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces.*/
+}
+
+main {
+    padding: 20px;/* Añade espacio alrededor del contenido principal para mejorar su apariencia.*/
+}
+
+section {
+    margin-bottom: 20px; /*Crea espacio debajo de cada sección/*
+    padding: 15px; /*Añade espacio interior a cada sección*/
+    border: 1px solid #ddd; /* Color de borde más claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+}
+
+footer {
+    text-align: center; /*Centra el texto dentro del pie de página*/
+    padding: 10px 0; /*Añade espacio arriba y abajo del pie de página.*/
+    background-color: #f1f1f1;  /*Asigna un fondo gris claro.*/
+}
+
+.columnas {
+    display: flex; /*Utiliza un diseño flexible para distribuir elementos en línea.*/
+    justify-content: space-between; /*Coloca espacio equitativo entre las columnas.*/
+    margin-top: 20px; /*Añade espacio en la parte superior.*/
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px;
+    border: 2px solid #007BFF; /* Cambiado a un borde azul */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro para las columnas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
